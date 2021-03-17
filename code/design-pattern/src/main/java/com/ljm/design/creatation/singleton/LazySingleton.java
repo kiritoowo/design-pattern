@@ -3,7 +3,12 @@ package com.ljm.design.creatation.singleton;
 /**
  * @Author: ljm
  * @Date: 2021-03-16 1:16
- * @Description:
+ * @Description: 懒汉单例模式
+ * 单例模式多用于
+ * 数据库连接池/线程池
+ * 只需要读取一次的 如属性文件/系统变量/环境变量等
+ * 上下文对象等
+ *
  */
 public class LazySingleton {
 
@@ -11,7 +16,7 @@ public class LazySingleton {
 
     /**
      * 双层判断实现单例
-     * @return
+     * @return 单例对象
      */
     private static LazySingleton getInstanceByDoubleIf() {
         if (instance == null) {
