@@ -18,7 +18,7 @@ public class LazySingleton {
      * 双层判断实现单例
      * @return 单例对象
      */
-    private static LazySingleton getInstanceByDoubleIf() {
+    public static LazySingleton getInstanceByDoubleIf() {
         if (instance == null) {
             synchronized (LazySingleton.class) {
                 if (instance == null) {
@@ -29,7 +29,7 @@ public class LazySingleton {
         return instance;
     }
 
-    private static LazySingleton getInstanceByInnerStaticClass() {
+    public static LazySingleton getInstanceByInnerStaticClass() {
         return LazySingletonInner.innerInstance;
     }
 

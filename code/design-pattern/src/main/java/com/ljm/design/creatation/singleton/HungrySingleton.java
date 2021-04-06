@@ -9,7 +9,7 @@ public class HungrySingleton {
 
     private static final HungrySingleton instance = new HungrySingleton();
 
-    private static HungrySingleton getInstance() {
+    public static HungrySingleton getInstance() {
         return instance;
     }
 
