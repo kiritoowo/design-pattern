@@ -1,4 +1,4 @@
-package com.ljm.design.creatation.factory.builder;
+package com.ljm.design.creatation.builder;
 
 /**
  * @Description 构造者模式测试
